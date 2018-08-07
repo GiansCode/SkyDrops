@@ -1,0 +1,47 @@
+# example:
+#   locations:
+#     - "world;x;y;z"
+#     - "world;other_x;other_y;other_z"
+#   commands:
+#     - "20|eco give %player% 1000"
+#     - "0.1|eco give %player% 99999"
+drops:
+  example:
+    locations:
+      - "world;0;100;0"
+      - "world;0;101;0"
+    commands:
+      - "20|give %player% diamond 1"
+      - "80|give %player% dirt 1"
+
+# Name for chest holograms where %name% is the event name
+hologram_message: '&6Event Chest: %name%'
+
+messages:
+  help: |-
+      /skydrops create
+      /skydrops addlocation
+      /skydrops addcommand
+      /skydrops start
+  command_usage: "&cIncorrect usage! Usage: %usage%"
+  no_permission: "&cYou don't have permission to use this command"
+  invalid_command: "&cInvalid command! Use /skydrops for help"
+  player_only: "&cOnly players can use this command"
+  added_event: "&aYou added an event with name %name%"
+  already_exists: "&cAn event with that name already exists"
+  invalid_event: "&cAn event with that name does not exist"
+  added_location: "&aYou added a location to event %name%"
+  invalid_number: "&c%number% is not a valid number"
+  too_many_chests: "&cThe specified event only has %amount% chest locations"
+  invalid_input: "&cYou must start the event with at least 1 chest"
+  no_locations: "&cThat event has no chest locations"
+  no_commands: "&cThat event has no commands configured"
+  event_started: "&6&lEvent %name% started with %amount% chests"
+  event_started_timer: "&6&lEvent %name% started with %amount% chests for %time% seconds"
+  already_active: "&cThat event is already active"
+  not_active: "&cThat event is not active"
+  event_ended: "&6The event %name% ended"
+  plugin_reloaded: "&aReloaded the plugin successfully"
+  added_command: "&aAdded command to event %name%"
+  stopped_event: "&aStopped event %event%"
+  stopped_event_broadcast: "&c&lThe event %event% was stopped"

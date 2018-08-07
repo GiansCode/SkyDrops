@@ -1,0 +1,10 @@
+name: SkyDrops
+version: ${project.version}
+author: Mas281
+main: me.itsmas.skydrops.SkyDrops
+
+softdepend: [HolographicDisplays]
+
+commands:
+  skydrops:
+    aliases: [sd]
